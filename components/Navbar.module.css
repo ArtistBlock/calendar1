@@ -1,0 +1,48 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  height: 4rem;
+  background-color: #01111f;
+  color: #ffffff;
+  max-width: 1440px;
+  margin: 10px auto 0px auto;
+}
+
+.info {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.info::before {
+  content: "Each new NFT is available for free within 24 hours";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #ffffff;
+  padding: 0.5rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 200px; 
+  text-align: center; 
+}
+
+.info:hover::before {
+  opacity: 1;
+}
+
+.socialIcons {
+  display: flex;
+  align-items: center;
+}
+
+.socialIcon {
+  margin-right: 20px;
+}
